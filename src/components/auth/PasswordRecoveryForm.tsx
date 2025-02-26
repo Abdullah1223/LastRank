@@ -28,7 +28,7 @@ export function PasswordRecoveryForm({ onBack }: PasswordRecoveryFormProps) {
     }else{
       setPasswordMatched(true)
       {/*'http://localhost:8001/createnewpassword'*/}
-      const response = await fetch('http://54.236.21.161:8001/createnewpassword',{
+      const response = await fetch('http://3.229.148.115:8001/createnewpassword',{
         method:'POST',
         headers: {
           'Content-Type': 'application/json', // Inform the server you're sending JSON
@@ -49,7 +49,7 @@ export function PasswordRecoveryForm({ onBack }: PasswordRecoveryFormProps) {
    const handleCode=async()=>{
     const data = {email:email,Code:Code}
      {/*'http://localhost:8001/passwordcodevalidation'*/}
-    const response = await fetch('http://54.236.21.161:8001/passwordcodevalidation',{
+    const response = await fetch('http://3.229.148.115:8001/passwordcodevalidation',{
       method:'POST',
       headers: {
         'Content-Type': 'application/json', // Inform the server you're sending JSON
@@ -92,7 +92,7 @@ export function PasswordRecoveryForm({ onBack }: PasswordRecoveryFormProps) {
     const data = {email:email}
     {/*http://localhost:8001/passwordrecovery*/}
 
-    const response = await fetch('http://54.236.21.161:8001/passwordrecovery',{
+    const response = await fetch('http://3.229.148.115:8001/passwordrecovery',{
       method:'POST',
       headers: {
         'Content-Type': 'application/json', // Inform the server you're sending JSON

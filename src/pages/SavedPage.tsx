@@ -57,7 +57,7 @@ export function SavedPage() {
   const FetchingSaved = async()=>{
     
     //http://localhost:8002/
-    const response = await fetch('http://54.236.21.161:8002/fetchingsaved', {
+    const response = await fetch('http://3.229.148.115:8002/fetchingsaved', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ export function SavedPage() {
 
   const confirmRemove = async() => {
     
-     const response = await fetch(`http://54.236.21.161:8002/removingsaved/${selectedCompetition?._id}/${selectedCompetition.genre}`, {
+     const response = await fetch(`http://3.229.148.115:8002/removingsaved/${selectedCompetition?._id}/${selectedCompetition.genre}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

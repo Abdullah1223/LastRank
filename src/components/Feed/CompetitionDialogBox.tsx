@@ -10,7 +10,7 @@ const CompetitionDialog = ({ competition, onClose,competitionid }: any) => {
   const FetchData = async(competitionid:any)=>{
     
     //`http://localhost:8003/FetchingSpecificCompetition/${competitionid}`
-    const response = await fetch(`http://54.236.21.161:8003/FetchingSpecificCompetition/${competitionid}`,{
+    const response = await fetch(`http://3.229.148.115:8003/FetchingSpecificCompetition/${competitionid}`,{
         method:'GET',
         headers: {
           'Content-Type': 'application/json', // Inform the server you're sending JSON

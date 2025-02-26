@@ -11,7 +11,7 @@ export function FeaturedArtist({followinglist,artist}:any) {
       _id:_id
     }
     console.log(data)
-    const response = await fetch('http://54.236.21.161:8002/addingfollowing',{
+    const response = await fetch('http://3.229.148.115:8002/addingfollowing',{
       method:'POST',
       headers: {
         'Content-Type': 'application/json', // Inform the server you're sending JSON
@@ -30,7 +30,7 @@ export function FeaturedArtist({followinglist,artist}:any) {
   }
   const RemovingFollowing=async(_id:any)=>{
     //http://localhost:8002/
-      const response = await fetch('http://54.236.21.161:8002/removingfollowing/'+_id,{
+      const response = await fetch('http://3.229.148.115:8002/removingfollowing/'+_id,{
         method:'DELETE',
         headers: {
           'Content-Type': 'application/json', // Inform the server you're sending JSON

@@ -232,7 +232,7 @@ export function NotificationsPage() {
   const {ref:ActiveNotificationRef,inView:ActiveNotificationsView}=useInView()
   const FetchingNotifications = async (cursor,type) => {
    // http://localhost:8002/
-    const response = await fetch(`http://54.236.21.161:8002/fetchingnotifications/${cursor}/${type}`, {
+    const response = await fetch(`http://3.229.148.115:8002/fetchingnotifications/${cursor}/${type}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

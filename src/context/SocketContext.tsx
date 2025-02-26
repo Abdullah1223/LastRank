@@ -23,7 +23,7 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const connectSocket = () => {
     
     //http://localhost:8005
-    const newSocket = io('http://54.236.21.161:8005',{
+    const newSocket = io('http://3.229.148.115:8005',{
         withCredentials:true,
         auth:{
             token:"token"

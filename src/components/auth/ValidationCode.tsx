@@ -13,7 +13,7 @@ const ValidationCode = ({Email}:any)=>{
             Code:ValidationCode,
             Email
         } 
-        const response = await fetch('http://54.236.21.161:8001/SignupValidation',{
+        const response = await fetch('http://3.229.148.115:8001/SignupValidation',{
             method:'POST',
             headers: {
               'Content-Type': 'application/json', // Inform the server you're sending JSON
@@ -32,7 +32,7 @@ const ValidationCode = ({Email}:any)=>{
     const ResendCode = {
         Email,
     }
-    const response = await fetch('http://54.236.21.161:8001/ResendValidationCode',{
+    const response = await fetch('http://3.229.148.115:8001/ResendValidationCode',{
         method:'POST',
         headers: {
           'Content-Type': 'application/json', // Inform the server you're sending JSON

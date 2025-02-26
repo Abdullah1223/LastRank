@@ -38,7 +38,7 @@ export function CompetitionPage() {
   const fetchAllData = async (page: number,genre:string) => {
     try {
       // setIsLoading(true);
-      const response = await fetch(`http://localhost:8003/fetchingallcompetitions/${genre}/${page}`);
+      const response = await fetch(`http://3.229.148.115:8003/fetchingallcompetitions/${genre}/${page}`);
       if (!response.ok) throw new Error('Failed to fetch');
       const result = await response.json();
 

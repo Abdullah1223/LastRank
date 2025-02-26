@@ -131,7 +131,7 @@ export function CompetitionHeader({setCurrentPage}) {
    
 
 //'http://localhost:8003/competitioncreation'
-       const response = await fetch('http://54.236.21.161:8003/competitioncreation',{
+       const response = await fetch('http://3.229.148.115:8003/competitioncreation',{
          method:'POST',
        headers: {
            'Content-Type': 'application/json', // Inform the server you're sending JSON
@@ -155,7 +155,7 @@ export function CompetitionHeader({setCurrentPage}) {
           if(fileputresponse.status==200){
             
             //http://localhost:8003/Imageurl
-          const lastresponse=  await fetch('http://54.236.21.161:8003/Imageurl',{
+          const lastresponse=  await fetch('http://3.229.148.115:8003/Imageurl',{
               method:'POST',
             headers: {
                 'Content-Type': 'application/json', // Inform the server you're sending JSON

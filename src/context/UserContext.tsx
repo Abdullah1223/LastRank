@@ -56,7 +56,7 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
   const {disconnectSocket,connectSocket,socket} = useSocket()
   const [user, setUser] = useState<User | null >(null);
  const CheckingForUser = async()=>{
-  const response = await fetch('http://54.236.21.161:8001/cookiecheck',{
+  const response = await fetch('http://3.229.148.115:8001/cookiecheck',{
     method:'GET',
     headers: {
       'Content-Type': 'application/json', // Inform the server you're sending JSON
@@ -110,7 +110,7 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
 
   const logout = async() => {
    
-    const response = await fetch('http://54.236.21.161:8001/logout',{
+    const response = await fetch('http://3.229.148.115:8001/logout',{
       method:'GET',
       headers: {
         'Content-Type': 'application/json', // Inform the server you're sending JSON

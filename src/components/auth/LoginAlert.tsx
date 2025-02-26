@@ -19,7 +19,7 @@ const LoginSignupAlert = ({setShowLoginAlert}) => {
  const handleSubmit = async(e: React.FormEvent) => {
      e.preventDefault();
      // In a real app, this would validate credentials with a backend
-     const response = await fetch('http://54.236.21.161:8001/login',{
+     const response = await fetch('http://3.229.148.115:8001/login',{
        method:'POST',
        headers: {
          'Content-Type': 'application/json', // Inform the server you're sending JSON

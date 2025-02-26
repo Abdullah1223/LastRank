@@ -336,7 +336,7 @@ function AllCompetitionPage({setCurrentPage,setDataAsProps}) {
      //`http://localhost:8003/BrowseAllCompetitions/${cursor}/${totalSaves}/${pagenum}`,
      
      
-      `http://54.236.21.161:8003/BrowseAllCompetitions/${cursor}/${totalSaves}/${pagenum}`,
+      `http://3.229.148.115:8003/BrowseAllCompetitions/${cursor}/${totalSaves}/${pagenum}`,
       {
         method: "GET",
         credentials: "include",

@@ -63,7 +63,7 @@ export function ProfilePage() {
    }else{
     
     //http://localhost:8002/
-    const response = await fetch('http://54.236.21.161:8002/profileUpdate',{
+    const response = await fetch('http://3.229.148.115:8002/profileUpdate',{
       method:'PUT',
       headers: {
         'Content-Type': 'application/json', // Inform the server you're sending JSON
@@ -100,7 +100,7 @@ export function ProfilePage() {
   const FetchData = async()=>{
     
   //http://localhost:8002/
-    const response = await fetch('http://54.236.21.161:8002/profilefetch',{
+    const response = await fetch('http://3.229.148.115:8002/profilefetch',{
       method:'GET',
       headers: {
         'Content-Type': 'application/json', // Inform the server you're sending JSON

@@ -310,7 +310,7 @@ export function FeaturedPool({
       category:competition.genre
     };
     //http://localhost:8002
-    const response = await fetch('http://54.236.21.161:8002/competitionsaved', {
+    const response = await fetch('http://3.229.148.115:8002/competitionsaved', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -308,7 +308,7 @@ function AppContent() {
 const Authorization=async()=>{
              
              {/* 'http://localhost:8001/home' */}
-  const response = await fetch('http://54.236.21.161:8001/home',{
+  const response = await fetch('http://3.229.148.115:8001/home',{
     method:'GET',
     headers: {
       'Content-Type': 'application/json', // Inform the server you're sending JSON

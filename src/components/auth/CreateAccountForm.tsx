@@ -58,7 +58,7 @@ export function CreateAccountForm({ onSwitchToLogin }: CreateAccountFormProps) {
     // In a real app, this would validate and create an account via API
     //http://localhost:8001/Signup
     
-    const response = await fetch('http://54.236.21.161:8001/Signup',{
+    const response = await fetch('http://3.229.148.115:8001/Signup',{
           method:'POST',
           headers: {
             'Content-Type': 'application/json', // Inform the server you're sending JSON

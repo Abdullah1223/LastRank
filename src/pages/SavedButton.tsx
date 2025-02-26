@@ -10,7 +10,7 @@ const SavedButton = ({isSaved,competition})=>{
         
         if(isSaved){
            
-              const response = await fetch(`http://54.236.21.161:8002/removingsaved/${competitiondata?._id}/${competitiondata.genre}`, {
+              const response = await fetch(`http://3.229.148.115:8002/removingsaved/${competitiondata?._id}/${competitiondata.genre}`, {
                 method: 'DELETE',
                 headers: {
                   'Content-Type': 'application/json',
@@ -21,7 +21,7 @@ const SavedButton = ({isSaved,competition})=>{
                 setButtonState(!ButtonState)
               }
         }else{
-            const response = await fetch('http://54.236.21.161:8002/competitionsaved', {
+            const response = await fetch('http://3.229.148.115:8002/competitionsaved', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',

@@ -42,7 +42,7 @@ export default function ChangePassword({ onClose }) {
     return ;
    }
    //http://localhost:8002
-    const response = await fetch('http://54.236.21.161:8002/profilePasswordChange',{
+    const response = await fetch('http://3.229.148.115:8002/profilePasswordChange',{
       method:'PUT',
       headers: {
         'Content-Type': 'application/json', // Inform the server you're sending JSON

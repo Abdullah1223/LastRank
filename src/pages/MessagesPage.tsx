@@ -39,7 +39,7 @@ export function MessagesPage() {
     
     
     //http://localhost:8005/messagesend
-    const response = await fetch('http://54.236.21.161:8005/messagesend',{
+    const response = await fetch('http://3.229.148.115:8005/messagesend',{
       method:'POST',
       headers: {
         'Content-Type': 'application/json', // Inform the server you're sending JSON
@@ -59,7 +59,7 @@ export function MessagesPage() {
    const FetchingChats = async()=>{
     
     //'http://localhost:8005/fetchingchats'
-    const response = await fetch('http://54.236.21.161:8005/fetchingchats',{
+    const response = await fetch('http://3.229.148.115:8005/fetchingchats',{
       method:'GET',
       headers: {
         'Content-Type': 'application/json', // Inform the server you're sending JSON

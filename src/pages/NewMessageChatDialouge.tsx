@@ -22,7 +22,7 @@ const [MessageError,setMessageError]=useState<string|null>(null)
 
      
     //'http://localhost:8005/FirstMessageCreate'
-    const response = await fetch('http://54.236.21.161:8005/FirstMessageCreate',{
+    const response = await fetch('http://3.229.148.115:8005/FirstMessageCreate',{
         method:'POST',
         headers: {
           'Content-Type': 'application/json', // Inform the server you're sending JSON
